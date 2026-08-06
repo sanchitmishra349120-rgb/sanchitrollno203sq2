@@ -1,75 +1,132 @@
 *{
-    margin: 0;
-    padding:0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
-body{
-    background: #9d0606;
-    color: white;
-}
-h1{
-    text-align: center;
-    margin:100px auto 50px;
-}
-form{
-    width:90%;
-    max-width:600px;
-    margin:auto;
-    height:80px;
-    background:#420303;
-    display:flex;
-    align-items:center;
-    border-radius:8px;
-}
-form input{
-    flex:1;
-    height:100%;
-    border:0;
-    outline:0;
-    background:transparent;
-    color:rgb(19, 147, 163);
-    font-size:18px;
-    padding:0 30px;
-}
-form button{
-    padding:0 40px;
-    height :100%;
-    background:salmon;
-    color:white;
-    font-size:18px;
-    border:0;
-    outline:0;
-    border-radius:50%;
-   
-    cursor:pointer;
 
+body{
+background:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
 }
-::placeholder{
-    color:rgb(232, 236, 237);
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,.6);
 }
-#load-more-button{
-    background:#cf0ddd;
-    color:white;
-    border:0;
-    outline:0;
-    padding:10px 20px;
-    border-radius:4px;
-    margin:10px auto 100px;
-    cursor:pointer;
-    display:none;
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
 }
-#search-result{
-    width:90%;
-    max-width:600px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:20px;
+
+.hero{
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
-#search-result img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:8px;
+
+.content{
+background:rgba(0,0,0,.6);
+padding:40px;
+border-radius:10px;
+}
+
+.content h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.content p{
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+margin:10px;
+border:none;
+background:#00bcd4;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0097a7;
+}
+
+.services{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:50px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+color:black;
+width:300px;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.contact{
+padding:50px;
+text-align:center;
+}
+
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.content h1{
+font-size:35px;
+}
+
+button{
+width:100%;
+}
+
 }
